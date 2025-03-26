@@ -1,18 +1,31 @@
 import { useEffect, useState } from 'react';
-import { Book } from './types/Book';
+import { Book } from '../types/Book';
+import { useNavigate } from 'react-router-dom';
 
-function BookList() {
+function BookList({
+  selectedCategories,
+  pageNum,
+  setPageNum,
+}: {
+  selectedCategories: string[];
+  pageNum: number;
+  setPageNum: (pageNum: number) => void;
+}) {
   const [books, setBooks] = useState<Book[]>([]);
   const [pageSize, setPageSize] = useState<number>(5);
-  const [pageNum, setPageNum] = useState<number>(1);
   const [totalItems, setTotalItems] = useState<number>(0);
   const [totalPages, setTotalPages] = useState<number>(1);
   const [sortType, setSortType] = useState<string>('');
+  const navigate = useNavigate();
 
   useEffect(() => {
     const fetchBooks = async () => {
+      const categoryParams = selectedCategories
+        .map((cat) => `bookCategories=${encodeURIComponent(cat)}`)
+        .join('&');
+
       const response = await fetch(
-        `https://localhost:5000/Bookstore?pageSize=${pageSize}&pageNum=${pageNum}&sortType=${sortType}`
+        `https://localhost:5000/Bookstore?pageSize=${pageSize}&pageNum=${pageNum}&sortType=${sortType}${selectedCategories.length ? `&${categoryParams}` : ''}`
       );
       const data = await response.json();
       setBooks(data.books);
@@ -21,7 +34,7 @@ function BookList() {
     };
 
     fetchBooks();
-  }, [pageSize, pageNum, totalItems]);
+  }, [pageSize, pageNum, totalItems, sortType, selectedCategories]);
 
   useEffect(() => {
     const sorted = [...books].sort((a, b) =>
@@ -30,12 +43,10 @@ function BookList() {
         : b.title.localeCompare(a.title)
     );
     setBooks(sorted);
-  }, [books, sortType]);
+  }, [sortType]);
 
   return (
     <>
-      <h1>Book List</h1>
-      <br />
       {books.map((b) => (
         <div id="bookCard" className="card" key={b.bookId}>
           <h3 className="card-title">{b.title}</h3>
@@ -64,6 +75,13 @@ function BookList() {
                 <strong>Price:</strong> {b.price}
               </li>
             </ul>
+
+            <button
+              className="btn btn-success"
+              onClick={() => navigate(`/buy/${b.bookId}/${b.title}/${b.price}`)}
+            >
+              Buy
+            </button>
           </div>
         </div>
       ))}
@@ -123,6 +141,7 @@ function BookList() {
             setSortType(t.target.value);
           }}
         >
+          <option></option>
           <option value="asc">Ascending</option>
           <option value="desc">Descending</option>
         </select>
