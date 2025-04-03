@@ -19,7 +19,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("AllowStuff",
         policy =>
         {
-            policy.WithOrigins("http://localhost:3000", "https://mango-island-05c251b1e.6.azurestaticapps.net/")
+            policy.WithOrigins("http://localhost:3000", "https://mango-island-05c251b1e.6.azurestaticapps.net")
             .AllowCredentials()
             .AllowAnyHeader()
             .AllowAnyMethod();
