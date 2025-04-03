@@ -32,6 +32,7 @@ const AdminBooksPage = () => {
     loadBooks();
   }, [sortType, pageSize, pageNum]);
 
+  // What makes the delete functionality work
   const handleDelete = async (bookId: number) => {
     const confirmDelete = window.confirm(
       'Are you sure you want to delete this book?'

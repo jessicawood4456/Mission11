@@ -5,6 +5,17 @@
     {
       "AbsoluteMoniker": "D:0:0:{213BAD96-C84B-48A3-96CC-2F8E12731186}|Mission11\\Mission11.csproj|c:\\users\\jessi\\onedrive\\documents\\is 413\\mission11\\backend\\mission11\\mission11\\controllers\\bookstorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{213BAD96-C84B-48A3-96CC-2F8E12731186}|Mission11\\Mission11.csproj|solutionrelative:mission11\\controllers\\bookstorecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\jessi\\AppData\\Local\\SourceServer\\ec059d3536614c4d8b49707dab01343c8072ad95e29e62e377de92763609c499\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{213BAD96-C84B-48A3-96CC-2F8E12731186}|Mission11\\Mission11.csproj|c:\\users\\jessi\\onedrive\\documents\\is 413\\mission11\\backend\\mission11\\mission11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{213BAD96-C84B-48A3-96CC-2F8E12731186}|Mission11\\Mission11.csproj|solutionrelative:mission11\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{213BAD96-C84B-48A3-96CC-2F8E12731186}|Mission11\\Mission11.csproj|c:\\users\\jessi\\onedrive\\documents\\is 413\\mission11\\backend\\mission11\\mission11\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{213BAD96-C84B-48A3-96CC-2F8E12731186}|Mission11\\Mission11.csproj|solutionrelative:mission11\\data\\book.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,7 +25,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,13 +37,50 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookstoreController.cs",
+              "DocumentMoniker": "C:\\Users\\jessi\\AppData\\Local\\SourceServer\\ec059d3536614c4d8b49707dab01343c8072ad95e29e62e377de92763609c499\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\ec059d3536614c4d8b49707dab01343c8072ad95e29e62e377de92763609c499\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs",
+              "ToolTip": "C:\\Users\\jessi\\AppData\\Local\\SourceServer\\ec059d3536614c4d8b49707dab01343c8072ad95e29e62e377de92763609c499\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs [Read Only]",
+              "RelativeToolTip": "..\\..\\..\\..\\..\\..\\AppData\\Local\\SourceServer\\ec059d3536614c4d8b49707dab01343c8072ad95e29e62e377de92763609c499\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs [Read Only]",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAARAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-03T21:08:41.529Z",
+              "EditorCaption": " [Read Only]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\jessi\\OneDrive\\Documents\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Data\\Book.cs",
+              "RelativeDocumentMoniker": "Mission11\\Data\\Book.cs",
+              "ToolTip": "C:\\Users\\jessi\\OneDrive\\Documents\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Data\\Book.cs",
+              "RelativeToolTip": "Mission11\\Data\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T16:18:23.595Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\jessi\\OneDrive\\Documents\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Program.cs",
+              "RelativeDocumentMoniker": "Mission11\\Program.cs",
+              "ToolTip": "C:\\Users\\jessi\\OneDrive\\Documents\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Program.cs",
+              "RelativeToolTip": "Mission11\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-26T15:43:51.224Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "BookstoreController.cs",
               "DocumentMoniker": "C:\\Users\\jessi\\OneDrive\\Documents\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs",
               "RelativeDocumentMoniker": "Mission11\\Controllers\\BookstoreController.cs",
               "ToolTip": "C:\\Users\\jessi\\OneDrive\\Documents\\IS 413\\Mission11\\backend\\Mission11\\Mission11\\Controllers\\BookstoreController.cs",
               "RelativeToolTip": "Mission11\\Controllers\\BookstoreController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAuwCgAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAEcAAAAAAAAAAAAgwFUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-17T17:01:06.65Z",
               "EditorCaption": ""
