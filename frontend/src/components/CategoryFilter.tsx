@@ -15,7 +15,7 @@ function CategoryFilter({
     const fetchCategories = async () => {
       try {
         const response = await fetch(
-          'https://mission-13-backend-atbkb0h8epg7b5f8.eastus-01.azurewebsites.net/Bookstore'
+          'https://mission-13-backend-atbkb0h8epg7b5f8.eastus-01.azurewebsites.net/Bookstore/GetBookCategories'
         );
         const data = await response.json();
         setCategories(data);
@@ -40,7 +40,7 @@ function CategoryFilter({
       <div className="border p-3 rounded">
         <h5 className="mb-3">Book Categories:</h5>
         <div className="d-flex flex-column">
-          {categories.map((c) => (
+          {categories?.map((c) => (
             <div key={c} className="form-check">
               <input
                 type="checkbox"
